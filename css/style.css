@@ -79,8 +79,8 @@ img{
     gap: 1rem;
 }
 .featured-image img{
-    height: 342px;
-    width: 342px;
+    height: 20rem;
+    width: 20rem;
 }
 .featured-title{
     font-size: 2rem;
@@ -168,7 +168,42 @@ img{
     transform: translateY(-1rem);
     transition: all 0.7s linear;
 }
-
+/* testimonial */
+.testimonial{
+    width: 75%;
+    margin: 0 auto;
+    padding: 5rem 0;
+}
+.testimonial h3{
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding-bottom: 5rem;
+    text-align: center;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.cards .card{
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 2rem;
+}
+.cards .card img{
+    width: 50%;
+    padding-bottom: 1rem;
+}
+.cards .card p{
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1.6rem;
+    padding-bottom: 1rem;
+}
+.fas{
+    color: orange;
+}
 /* sponsers */
 .sponsers{
     width: 75%;
@@ -210,27 +245,11 @@ footer p{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 576px) {
     ul, nav, .feature, .about, .cards-container, .sponser{
         flex-direction: column;
     }
-    .featured-image{
+    .featured-image, .cards{
         grid-template-columns: repeat(1, 1fr);
     }
 }
