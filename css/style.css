@@ -42,6 +42,7 @@ ul li a{
 .btn{
     padding: 12px 24px;
     border: 0;
+    cursor: pointer;
 }
 .btn-primary{
     background-color: rgb(255, 77, 0);
@@ -60,6 +61,36 @@ img{
     font-size: 1rem;
     font-weight: 200;
     padding: 1rem 0 0.5rem 0;
+}
+
+/* featured section */
+.feature{
+    width: 75%;
+    margin: 0 auto;
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+.featured-image{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+.featured-image img{
+    height: 342px;
+    width: 342px;
+}
+.featured-title{
+    font-size: 2rem;
+    font-weight: 400;
+}
+.feature p{
+    font-size: 0.9rem;
+    font-weight: 300;
+    padding: 1.2rem 0;
+    line-height: 1.6rem;
 }
 
 
@@ -84,7 +115,10 @@ img{
 
 
 @media screen and (max-width: 576px) {
-    ul, nav{
+    ul, nav, .feature{
         flex-direction: column;
+    }
+    .featured-image{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
