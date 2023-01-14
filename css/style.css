@@ -93,6 +93,37 @@ img{
     line-height: 1.6rem;
 }
 
+/* about section */
+.about{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+.details h3{
+    font-size: 2rem;
+    font-weight: 600;
+    border-left: 4px solid #FF900E;
+    padding-left: 0.5rem;
+}
+.details .desc{
+    font-size: 0.9rem;
+    font-weight: 300;
+    padding: 1rem 0;
+}
+.card{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 2rem;
+    margin: 0.8rem 0;
+}
+.card p{
+    font-size: 0.9rem;
+    font-weight: 300;
+    padding: 0.6rem 0 0 0;
+}
+
 
 
 
@@ -115,7 +146,7 @@ img{
 
 
 @media screen and (max-width: 576px) {
-    ul, nav, .feature{
+    ul, nav, .feature, .about{
         flex-direction: column;
     }
     .featured-image{
