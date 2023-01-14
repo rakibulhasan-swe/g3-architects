@@ -158,7 +158,7 @@ img{
     font-size: 2.5rem;
     font-weight: 600;
 }
-.facts .desc, .sponsers p{
+.facts .desc, .sponsers p, .testimonial .desc{
     font-size: 0.9rem;
     font-weight: 300;
     padding: 1rem 0;
@@ -177,13 +177,12 @@ img{
 .testimonial h3{
     font-size: 2.5rem;
     font-weight: 600;
-    padding-bottom: 5rem;
-    text-align: center;
 }
 .cards{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    padding-top: 4rem;
 }
 .cards .card{
     text-align: center;
@@ -241,9 +240,7 @@ footer p{
 }
 
 
-
-
-
+/* responsive */
 
 @media screen and (max-width: 576px) {
     ul, nav, .feature, .about, .cards-container, .sponser{
