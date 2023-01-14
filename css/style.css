@@ -113,7 +113,7 @@ img{
     font-weight: 300;
     padding: 1rem 0;
 }
-.card{
+.details .card{
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     padding: 2rem;
     margin: 0.8rem 0;
@@ -122,6 +122,37 @@ img{
     font-size: 0.9rem;
     font-weight: 300;
     padding: 0.6rem 0 0 0;
+}
+
+/* facts section */
+.facts{
+    width: 75%;
+    margin: 0 auto;
+    padding: 5rem 0;
+}
+.cards-container{
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    padding-top: 3rem;
+}
+.cards-container .card{
+    text-align: center;
+    border: 2px solid #FF900E;
+    padding: 2rem 1rem;
+}
+.cards-container .card img{
+    width: 45.22px;
+    height: 45.22px;
+}
+.facts .title{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.facts .desc{
+    font-size: 0.9rem;
+    font-weight: 300;
+    padding: 1rem 0;
 }
 
 
