@@ -118,7 +118,7 @@ img{
     padding: 2rem;
     margin: 0.8rem 0;
 }
-.card p{
+.card-details{
     font-size: 0.9rem;
     font-weight: 300;
     padding: 0.6rem 0 0 0;
@@ -141,18 +141,68 @@ img{
     border: 2px solid #FF900E;
     padding: 2rem 1rem;
 }
+.cards-container .card h4{
+    font-weight: 800;
+    font-size: 1.3rem;
+}
+.cards-container .card p{
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #757575;
+}
 .cards-container .card img{
     width: 45.22px;
     height: 45.22px;
 }
-.facts .title{
-    font-size: 2rem;
+.facts .title, .sponsers h3{
+    font-size: 2.5rem;
     font-weight: 600;
 }
-.facts .desc{
+.facts .desc, .sponsers p{
     font-size: 0.9rem;
     font-weight: 300;
     padding: 1rem 0;
+}
+
+.hover-effect:hover{
+    transform: translateY(-1rem);
+    transition: all 0.7s linear;
+}
+
+/* sponsers */
+.sponsers{
+    width: 75%;
+    margin: 0 auto;
+    padding: 2rem 0 5rem 0;
+}
+.sponser{
+    padding-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+.sponser-details{
+    text-align: center;
+}
+.sponser img{
+    filter: grayscale(1);
+}
+.sponser img:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+}
+
+/* footer */
+
+footer{
+    padding: 2rem;
+    background-color: rgba(255, 144, 14, 0.1);
+}
+footer p{
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 300;
 }
 
 
@@ -177,7 +227,7 @@ img{
 
 
 @media screen and (max-width: 576px) {
-    ul, nav, .feature, .about{
+    ul, nav, .feature, .about, .cards-container, .sponser{
         flex-direction: column;
     }
     .featured-image{
